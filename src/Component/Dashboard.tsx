@@ -2,15 +2,15 @@ import { events, messages, notifications, tasks } from "../data"
 import ActionButton from "./ActionButton"
 import CalendarPanel from "./CalenderPlaner"
 import CardHolder from "./CardHolder"
+import Header from "./Header"
 import Messages from "./Messages"
 import NotificationList from "./NotificationList"
-import TaskBar from "./TaskBar"
 import TaskList from "./TaskList"
 
 const Dashboard = () => {
   return (
     <div className="flex flex-col">
-        <TaskBar/>
+        <Header/>
         <CardHolder/>
         <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 px-4 mb-8">
             <ActionButton label="Check Calendar" iconType="calendar" />

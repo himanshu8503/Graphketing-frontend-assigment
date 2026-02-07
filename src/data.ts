@@ -1,4 +1,4 @@
-import type { CardProps, SideBarMenuType } from "./types";
+import type { CardProps, SideBarMenuType, Task } from "./types";
 
 export const SideBarMenu : SideBarMenuType[] = [
     { id: 1, label: 'Dashboard', icon: "/Sidebar_Element/Dashboard.png", active: true },
@@ -18,3 +18,50 @@ export const CardData : CardProps[] = [
     {title: "Total Clients", value:87, change: 12, changeLabel:"from last month", iconType:"clients",isPositive: true},
 ]
 
+export const tasks: Task[] = [
+  {
+    id: '1',
+    title: 'Jefferson Partners LLC v. Astro Corp',
+    description: 'Contract dispute regarding software licensing agreement',
+    assignedTo: 'Sarah Johnson',
+    dueDate: 'Nov 15, 2025',
+    status: 'Corporate',
+    avatar: 'JP',
+  },
+  {
+    id: '2',
+    title: 'Jefferson Partners LLC v. Astro Corp',
+    description: 'Contract dispute regarding software licensing agreement',
+    assignedTo: 'Sarah Johnson',
+    dueDate: 'Nov 15, 2025',
+    status: 'Personal Injury',
+    avatar: 'JP',
+  },
+  {
+    id: '3',
+    title: 'Jefferson Partners LLC v. Astro Corp',
+    description: 'Contract dispute regarding software licensing agreement',
+    assignedTo: 'Sarah Johnson',
+    dueDate: 'Nov 15, 2025',
+    status: 'Estate Planning',
+    avatar: 'JP',
+  },
+  {
+    id: '4',
+    title: 'Jefferson Partners LLC v. Astro Corp',
+    description: 'Contract dispute regarding software licensing agreement',
+    assignedTo: 'Sarah Johnson',
+    dueDate: 'Nov 15, 2025',
+    status: 'Estate Planning',
+    avatar: 'JP',
+  },
+  {
+    id: '5',
+    title: 'Jefferson Partners LLC v. Astro Corp',
+    description: 'Contract dispute regarding software licensing agreement',
+    assignedTo: 'Sarah Johnson',
+    dueDate: 'Nov 15, 2025',
+    status: 'Corporate',
+    avatar: 'JP',
+  },
+];

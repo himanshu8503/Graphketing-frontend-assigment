@@ -15,4 +15,14 @@ interface CardProps {
   isPositive: boolean;
 }
 
-export type {SideBarMenuType,CardProps}
+interface Task {
+  id: string;
+  title: string;
+  description: string;
+  assignedTo: string;
+  dueDate: string;
+  status: 'Corporate' | 'Personal Injury' | 'Estate Planning';
+  avatar: string;
+}
+
+export type {SideBarMenuType,CardProps,Task}

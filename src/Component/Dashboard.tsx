@@ -1,6 +1,8 @@
+import { tasks } from "../data"
 import ActionButton from "./ActionButton"
 import CardHolder from "./CardHolder"
 import TaskBar from "./TaskBar"
+import TaskList from "./TaskList"
 
 const Dashboard = () => {
   return (
@@ -14,6 +16,9 @@ const Dashboard = () => {
             <ActionButton label="All Tools" iconType="tools" />
             <ActionButton label="Raise Tickets" iconType="tickets" />
             <ActionButton label="Take Notes" iconType="notes" />
+        </div>
+        <div className=" grid grid-cols-1 lg:grid-cols-2 px-4">
+            <TaskList tasks={tasks}/>
         </div>
     </div>
   )

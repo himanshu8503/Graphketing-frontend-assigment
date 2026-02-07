@@ -25,4 +25,26 @@ interface Task {
   avatar: string;
 }
 
+export interface Notification {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+}
+
+export interface CalendarEvent {
+  id: string;
+  time: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface Message {
+  id: string;
+  from: string;
+  content: string;
+  avatar: string;
+}
+
 export type {SideBarMenuType,CardProps,Task}

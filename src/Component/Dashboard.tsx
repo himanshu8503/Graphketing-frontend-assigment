@@ -1,6 +1,9 @@
-import { tasks } from "../data"
+import { events, messages, notifications, tasks } from "../data"
 import ActionButton from "./ActionButton"
+import CalendarPanel from "./CalenderPlaner"
 import CardHolder from "./CardHolder"
+import Messages from "./Messages"
+import NotificationList from "./NotificationList"
 import TaskBar from "./TaskBar"
 import TaskList from "./TaskList"
 
@@ -17,8 +20,15 @@ const Dashboard = () => {
             <ActionButton label="Raise Tickets" iconType="tickets" />
             <ActionButton label="Take Notes" iconType="notes" />
         </div>
-        <div className=" grid grid-cols-1 lg:grid-cols-2 px-4">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-2 px-4">
             <TaskList tasks={tasks}/>
+            <div className=" grid grid-cols-1 gap-2 ">
+                <div className=" grid grid-cols-1 lg:grid-cols-2 gap-2">
+                    <NotificationList notifications={notifications}/>
+                    <CalendarPanel events={events}/>
+                </div>
+                <Messages messages={messages}/>
+            </div>
         </div>
     </div>
   )

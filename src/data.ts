@@ -1,4 +1,4 @@
-import type { CardProps, SideBarMenuType, Task } from "./types";
+import type { CardProps, SideBarMenuType, Task ,Notification, CalendarEvent, Message} from "./types";
 
 export const SideBarMenu : SideBarMenuType[] = [
     { id: 1, label: 'Dashboard', icon: "/Sidebar_Element/Dashboard.png", active: true },
@@ -63,5 +63,60 @@ export const tasks: Task[] = [
     dueDate: 'Nov 15, 2025',
     status: 'Corporate',
     avatar: 'JP',
+  },
+];
+
+export const statusColors : string[] = [
+    'bg-blue-100 text-blue-700',
+    'bg-orange-100 text-orange-700',
+    'bg-green-100 text-green-700',
+    'bg-purple-100 text-purple-700'
+]
+
+export const notifications: Notification[] = [
+  {
+    id: '1',
+    title: 'New Task Assigned',
+    description: 'Client Name | Assigned at: 12 June 2024',
+    date: '25 June',
+  },
+  {
+    id: '2',
+    title: 'New Task Assigned',
+    description: 'Client Name | Assigned at: 12 June 2024',
+    date: '25 June',
+  },
+];
+
+export const events: CalendarEvent[] = [
+  {
+    id: '1',
+    time: '2:00 PM - 3:30 PM',
+    title: 'Team Meeting',
+    description: 'New Trademark Filing | +3 Other team members',
+    icon: 'video',
+  },
+  {
+    id: '2',
+    time: '5:00 PM - 6:30 PM',
+    title: 'Submission of Assignment',
+    description: 'New Trademark Filing | +3 Other team members',
+    icon: 'document',
+  },
+];
+
+export const messages: Message[] = [
+  {
+    id: '1',
+    from: 'Anurag',
+    content: 'Hi, Hope you are doing well, this is to update you that I have finished first installment of payment. Please proceed with the task as discussed.',
+    avatar: "A"
+    
+  },
+  {
+    id: '2',
+    from: 'Rahul',
+    content: 'Hi, Hope you are doing well, this is to update you that I have finished first installment of payment. Please proceed with the task as discussed.',
+    avatar: "R"
   },
 ];

@@ -28,8 +28,8 @@ npm --version
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd <project-folder-name>
+git clone https://github.com/himanshu8503/Graphketing-frontend-assigment.git
+cd Graphketing-frontend-assigment
 ```
 
 ### 2. Install Dependencies

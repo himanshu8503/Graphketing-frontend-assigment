@@ -1,4 +1,4 @@
-import type { SideBarMenuType } from "./types";
+import type { CardProps, SideBarMenuType } from "./types";
 
 export const SideBarMenu : SideBarMenuType[] = [
     { id: 1, label: 'Dashboard', icon: "/Sidebar_Element/Dashboard.png", active: true },
@@ -11,4 +11,10 @@ export const SideBarMenu : SideBarMenuType[] = [
     { id: 8, label: 'Category 8', icon: "/Sidebar_Element/Calendar.png", active: false },
 ]
 
+export const CardData : CardProps[] = [
+    {title: "Active Cases", value:42, change: 12, changeLabel:"from last month", iconType:"cases",isPositive: true},
+    {title: "Pending Tasks", value:17, change: 4, changeLabel:"from last week", iconType:"tasks",isPositive: false},
+    {title: "Revenue", value:2850, change: 12, changeLabel:"from last month", iconType:"revenue",isPositive: true},
+    {title: "Total Clients", value:87, change: 12, changeLabel:"from last month", iconType:"clients",isPositive: true},
+]
 

@@ -1,3 +1,4 @@
+import Dashboard from "../Component/Dashboard"
 import Sidebar from "../Component/Sidebar"
 
 const Layout = () => {
@@ -7,7 +8,7 @@ const Layout = () => {
             <Sidebar/>
         </div>
         <div className="flex-1">
-
+            <Dashboard/>
         </div>
     </div>
   )

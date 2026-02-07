@@ -6,4 +6,13 @@ interface SideBarMenuType {
     active: boolean;
 }
 
-export type {SideBarMenuType}
+interface CardProps {
+  title: string;
+  value: number;
+  change: number;
+  changeLabel: string;
+  iconType: 'cases' | 'tasks' | 'revenue' | 'clients';
+  isPositive: boolean;
+}
+
+export type {SideBarMenuType,CardProps}

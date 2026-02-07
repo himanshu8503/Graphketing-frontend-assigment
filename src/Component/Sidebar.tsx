@@ -10,21 +10,7 @@ const Sidebar = () => {
             <div className="flex justify-center items-center size-30 mb-8">
                 <img src="/logo/logo.png" alt="logo" />
             </div>
-{/* 
-            {
-            SideBarMenu.map((item : SideBarMenuType) => {
-                return (
-                    <div className={`flex flex-row gap-1 ${ item.active? "bg-sidebar-secondary":""} py-4 px-2 rounded-2xl `}>
-                        <div>
-                            <img src={item.icon} alt={item.label} />
-                        </div>
-                        <div>
-                          <p className="text-white">{item.label}</p>  
-                        </div>    
-                    </div>
-                )
-            })
-        } */}
+
 
         <nav className="w-full flex-1">
             <ul className="space-y-2 flex flex-col items-center justify-center">

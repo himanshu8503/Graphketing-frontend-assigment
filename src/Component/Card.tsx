@@ -14,7 +14,7 @@ export default function Card({ title, value, change, changeLabel, iconType, isPo
   const { icon: Icon, bgColor, iconColor } = iconMap[iconType];
 
   return (
-    <div className="bg-secondary md: w-xs rounded-xl p-6 mx-auto border border-gray-200 hover:shadow-lg transition-shadow">
+    <div className="bg-secondary w-full pr-8 rounded-xl p-6 mx-auto border border-gray-200 hover:shadow-lg transition-shadow">
       <div className="flex justify-start items-start gap-4 mb-4">
         <div className={`${bgColor} p-3 rounded-lg`}>
           <Icon className={`w-6 h-6 ${iconColor}`} />

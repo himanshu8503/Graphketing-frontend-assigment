@@ -3,7 +3,7 @@ import Card from "./Card"
 
 const CardHolder = () => {
   return (
-    <div className="flex px-4 gap-2">
+    <div className="grid grid-cols-2 lg:grid-cols-4 px-4 gap-2 mb-8">
         {CardData.map(({title,value,change,changeLabel,iconType,isPositive}) => (
             <Card
                 title={title}
